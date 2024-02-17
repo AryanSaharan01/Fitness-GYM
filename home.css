@@ -143,7 +143,8 @@ nav {
   font-size: 110px;
   font-weight: 700;
   letter-spacing: 3px;
-  color: var(--TH5-main-3);
+  /* color: var(--TH5-main-3); */
+  color: #eee;
   transition: 0.3s ease;
 }
 
@@ -177,7 +178,8 @@ nav {
   border-radius: 10px;
   cursor: pointer;
   color: #000;
-  text-shadow: var(--text-shadow);
+  /* text-shadow: var(--text-shadow); */
+  text-shadow: var(--txt-shadow-white);
 }
 
 /* ------------------------------------------------------------------- */
@@ -353,7 +355,7 @@ nav {
 }
 
 .cont-4 h1 {
-  font-size: 75px;
+  font-size: 95px;
   font-weight: 600;
   letter-spacing: 3px;
   color: #000;
@@ -405,14 +407,17 @@ nav {
   background-size: cover;
 }
 
-.parallax5 {
+/* .parallax5 {
   background-image: url("https://img.freepik.com/premium-photo/there-are-many-exercise-equipment-gym-room-with-lot-windows-generative-ai_958078-12471.jpg");
 
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("https://img.freepik.com/premium-photo/there-are-many-exercise-equipment-gym-room-with-lot-windows-generative-ai_958078-12471.jpg");
-}
+} */
 
 .cont-5 h1 {
+  width: fit-content;
+  margin: auto auto;
+  /* backdrop-filter: blur(5px); */
   font-size: 95px;
   font-weight: 600;
   text-align: center;
@@ -420,13 +425,20 @@ nav {
   letter-spacing: 5px;
   color: #000000;
   text-shadow: var(--txt-shadow-white);
+  transition: 0.3s ease;
+}
+
+.cont-5 h1:hover {
+  /* transform: scale(1.1); */
+  text-shadow: var(--text-shadow);
 }
 
 .cont-5-flex {
   border: 2px solid chartreuse;
 
+  backdrop-filter: blur(5px);
   margin: auto auto;
-  margin-bottom: 5vh;
+  margin-bottom: 12vh;
   display: flex;
   justify-content: space-between;
   width: 75%;
@@ -438,20 +450,21 @@ nav {
   border-bottom-right-radius: 20px;
 }
 
-.cont-5-cmn img {
+.cont-5-img {
   /* background-attachment: fixed; */
-  /* background-position: center; */
-  /* background-size: cover; */
 
+  background-image: url("static/images/sample.jpeg");
   height: 55vh;
   width: 20vw;
+  background-position: center;
+  background-size: cover;
 }
 
 .cont-5-cmn p {
   font-size: 35px;
   font-weight: 600;
   text-align: center;
-  padding: 1vh;
+  padding: 3vh 0;
   letter-spacing: 2px;
   /* color: #000000; */
   /* text-shadow: var(--txt-shadow-white); */
@@ -469,6 +482,74 @@ nav {
 }
 
 /* ------------------------------------------------------------------- */
+.cont-6 {
+  border: 2px solid red;
+}
+
+.cont-6 h1 {
+  width: fit-content;
+  margin: auto auto;
+  /* backdrop-filter: blur(5px); */
+  font-size: 95px;
+  font-weight: 600;
+  text-align: center;
+  padding: 3vh;
+  letter-spacing: 5px;
+  color: #000000;
+  text-shadow: var(--txt-shadow-white);
+  transition: 0.3s ease;
+}
+
+.cont-6 h1:hover {
+  /* transform: scale(1.1); */
+  text-shadow: var(--text-shadow);
+}
+
+.cont-6-flex{
+
+    margin: auto  auto;
+    margin-bottom: 7vh;
+    width: 85%;
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+.price-box{
+    border: 2px solid transparent;
+    flex: 1;
+    text-align: center;
+    margin: 0 3vw;
+    transition: 0.3s ease;
+}
+
+.price-box:hover{
+    border-radius: 25px;
+    border-top: 2px solid var(--TH5-main-3) ;
+    border-bottom: 2px solid var(--TH5-main-4) ;
+    border-left: 2px solid var(--TH5-main-3) ;
+    border-right: 2px solid var(--TH5-main-4);
+}
+
+.price-box h2{
+    padding-top: 4vh;
+    font-size: 35px;
+}
+
+.amnt{
+    font-size: 65px;
+    color: #000;
+    text-shadow: var(--text-shadow);
+}
+
+.price-box p{
+    padding: 1.8vh 0;
+    font-size: 22px;
+}
+
+.price-box button{
+    margin-bottom: 5vh;
+}
+
 /* ------------------------------------------------------------------- */
 @media screen and (max-width: 1000px) {
   .nav-item ul {
