@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+    background-size: cover;
+    color: white;
+  }
+  
+  body {
+    font-family: Arial, sans-serif; /* Adjust font family as needed */
+    background-color: aqua;
+  }
+
+  .cont-1{
+    height: 100vh;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+
+    background-image: url("https://png.pngtree.com/background/20230528/original/pngtree-dark-gym-with-equipments-picture-image_2773570.jpg");
+
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://png.pngtree.com/background/20230528/original/pngtree-dark-gym-with-equipments-picture-image_2773570.jpg");
+    background-size: cover;
+
+}
+  
+  nav {
+    border: 2px solid rosybrown;
+
+
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    /* margin-top: 5vh; */
+    width: 86%;
+    border-radius: 50px;
+    backdrop-filter: blur(10px); /* Adjust the blur strength as needed */
+    background-color: rgba(255, 255, 255, 0.1); /* Adjust the alpha for background transparency */
+  }
+  
+  
+  .nav-padding {
+    margin: 2vh 3vw;
+    padding: 10px;
+  }
+  
+  .logo {
+    margin-left: 1vw;
+    font-size: 35px;
+    border-radius: 50px;
+
+
+    border: 2px solid greenyellow;
+  }
+  
+  .nav-item {
+    border: 2px solid orange;
+  }
+  
+  .nav-item ul {
+
+    display: flex;
+    list-style: none;
+    align-items: center; /* Center the list items vertically */
+  }
+  
+  .nav-item ul li {
+    font-size: 20px;
+    padding: 0px 15px;
+  }
+
+
+  /* ------------------------------------------------------------------- */
+.cont-2{
+    border: 2px solid red;
+    height: 100vh;
+}
+
+  
+  /* ------------------------------------------------------------------- */
+  
+  
+  
+  /* ------------------------------------------------------------------- */
+  
+  
+  
+  /* ------------------------------------------------------------------- */
+  
+  
