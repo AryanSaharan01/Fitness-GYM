@@ -1,91 +1,378 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-   
-    background-size: cover;
-    color: white;
-  }
-  
-  body {
-    font-family: Arial, sans-serif; /* Adjust font family as needed */
-    background-color: aqua;
-  }
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
 
-  .cont-1{
-    height: 100vh;
-    padding-top: 5vh;
-    padding-bottom: 5vh;
+  background-size: cover;
+  color: white;
 
-    background-image: url("https://png.pngtree.com/background/20230528/original/pngtree-dark-gym-with-equipments-picture-image_2773570.jpg");
+  font-family: "Protest Revolution", sans-serif;
+}
 
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+body {
+  font-family: Arial, sans-serif;
+  /* Adjust font family as needed */
+  background-color: var(--TH2-main-1);
+}
+
+:root {
+  --text-shadow: -1px -1px 0 var(--TH5-main-3), 1px -1px 0 var(--TH5-main-3),
+    -1px 1px 0 var(--TH5-main-3), 1px 1px 0 var(--TH5-main-3);
+
+  --txt-shadow-white: -1px -1px 0 var(--TH5-main-4),
+    1px -1px 0 var(--TH5-main-4), -1px 1px 0 var(--TH5-main-4),
+    1px 1px 0 var(--TH5-main-4);
+}
+
+/* ------------------------------------------------------------- */
+
+.cont-1 {
+  height: 100vh;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+}
+
+/* -------------------parallax-------------------------------- */
+
+.sec-bg {
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+.parallax1 {
+  background-image: url("https://png.pngtree.com/background/20230528/original/pngtree-dark-gym-with-equipments-picture-image_2773570.jpg");
+
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("https://png.pngtree.com/background/20230528/original/pngtree-dark-gym-with-equipments-picture-image_2773570.jpg");
-    background-size: cover;
-
+  background-size: cover;
 }
-  
-  nav {
-    border: 2px solid rosybrown;
 
+/* ---------------------------------------------------------------------- */
+nav {
+  border: 2px solid rosybrown;
 
-    display: flex;
-    justify-content: space-between;
-    margin: auto;
-    /* margin-top: 5vh; */
-    width: 86%;
-    border-radius: 50px;
-    backdrop-filter: blur(10px); /* Adjust the blur strength as needed */
-    background-color: rgba(255, 255, 255, 0.1); /* Adjust the alpha for background transparency */
-  }
-  
-  
-  .nav-padding {
-    margin: 2vh 3vw;
-    padding: 10px;
-  }
-  
-  .logo {
-    margin-left: 1vw;
-    font-size: 35px;
-    border-radius: 50px;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  /* margin-top: 5vh; */
+  width: 86%;
+  border-radius: 50px;
+  backdrop-filter: blur(10px);
+  /* Adjust the blur strength as needed */
+  background-color: rgba(255, 255, 255, 0.1);
+  /* Adjust the alpha for background transparency */
+}
 
+.nav-padding {
+  margin: 2vh 3vw;
+  padding: 10px;
+}
 
-    border: 2px solid greenyellow;
-  }
-  
-  .nav-item {
-    border: 2px solid orange;
-  }
-  
+.logo {
+  padding: 0px 0px;
+  margin-left: 1vw;
+  font-size: 35px;
+  border-radius: 50px;
+
+  border: 2px solid greenyellow;
+}
+
+.logo img {
+  height: 6vh;
+  width: 7vw;
+
+  background-position: center;
+  background-size: contain;
+  border-radius: 50px;
+}
+
+.nav-item {
+  border: 2px solid orange;
+}
+
+.nav-item ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  /* Center the list items vertically */
+}
+
+.nav-item ul li a {
+  text-decoration: none;
+  font-size: 20px;
+  padding: 0px 15px;
+
+  font-family: "Protest Revolution", sans-serif;
+}
+
+.cont-1-text {
+  border: 2px solid yellow;
+
+  margin-top: 18vh;
+  margin-right: 10vw;
+  /* font-family: "Oswald", sans-serif; */
+  font-family: "Protest Revolution", sans-serif;
+  font-weight: 400;
+
+  padding: 2vh 2vw;
+  width: fit-content;
+  float: right;
+}
+
+.cont-1-text :nth-child(1) {
+  font-size: 30px;
+  color: var(--TH5-main-4);
+  letter-spacing: 2px;
+  /* text-shadow: -1px -1px 0 var(--TH5-main-4), 1px -1px 0 var(--TH5-main-4),
+    -1px 1px 0 var(--TH5-main-4), 1px 1px 0 var(--TH5-main-4); */
+}
+
+.cont-1-text :nth-child(2) {
+  font-size: 110px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  color: rgb(0, 0, 0);
+  /* text-shadow: -1px -1px 0 var(--TH5-main-3), 1px -1px 0 var(--TH5-main-3),
+    -1px 1px 0 var(--TH5-main-3), 1px 1px 0 var(--TH5-main-3); */
+  text-shadow: var(--text-shadow);
+}
+
+.text-colour {
+  text-shadow: none;
+  font-size: 110px;
+  font-weight: 700;
+  letter-spacing: 3px;
+
+  color: var(--TH5-main-3);
+}
+
+.cont-1-text :nth-child(4) {
+  font-size: 110px;
+  font-weight: 900;
+  letter-spacing: 3px;
+  color: rgb(0, 0, 0);
+  /* text-shadow: -1px -1px 0 var(--TH5-main-3), 1px -1px 0 var(--TH5-main-3),
+    -1px 1px 0 var(--TH5-main-3), 1px 1px 0 var(--TH5-main-3); */
+  text-shadow: var(--text-shadow);
+}
+
+.more-btn {
+  background-color: #000;
+  margin-top: 3vh;
+  font-size: 18px;
+  font-family: "Protest Revolution", sans-serif;
+
+  padding: 1.7vh 1.7vw;
+  border: 2px solid var(--TH5-main-3);
+  text-shadow: none;
+  transition: 0.3s ease;
+}
+
+.more-btn:hover {
+  border-radius: 10px;
+  cursor: pointer;
+  color: #000;
+  text-shadow: var(--text-shadow);
+}
+
+/* ------------------------------------------------------------------- */
+.cont-2 {
+  border: 2px solid red;
+  height: 80vh;
+}
+
+.sec-bg {
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+.parallax2 {
+  background-image: url("https://img.freepik.com/premium-photo/there-are-many-exercise-equipment-gym-room-with-lot-windows-generative-ai_958078-12471.jpg");
+
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://img.freepik.com/premium-photo/there-are-many-exercise-equipment-gym-room-with-lot-windows-generative-ai_958078-12471.jpg");
+}
+
+.for-girls {
+  border: 2px solid greenyellow;
+
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://img.freepik.com/premium-photo/fitness-girl-with-dumbbells-dark-background-isolated_2221-2258.jpg");
+
+  /* background-attachment: fixed; */
+  /* background-size: cover; */
+  background-position: top;
+  position: relative;
+
+  width: 50%;
+  height: 100%;
+}
+
+.girl-cmn {
+  border: 2px solid white;
+  /* margin: 15vh 10vw; */
+
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.girl-cmn h1 {
+  font-size: 45px;
+  margin-bottom: 5vh;
+
+  letter-spacing: 3px;
+  color: rgb(0, 0, 0);
+  /* text-shadow: -1px -1px 0 var(--TH5-main-3), 1px -1px 0 var(--TH5-main-3),
+    -1px 1px 0 var(--TH5-main-3), 1px 1px 0 var(--TH5-main-3); */
+  text-shadow: var(--text-shadow);
+  transition: 0.3s ease;
+}
+
+.girl-cmn h1:hover {
+  transform: scale(1.3);
+}
+
+.girl-cmn p {
+  font-size: 20px;
+}
+
+/* ------------------------------------------------------------------- */
+.cont-3 {
+  border: 2px solid red;
+  height: 80vh;
+}
+
+.sec-bg {
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+.parallax3 {
+  background-image: url("https://png.pngtree.com/background/20230528/original/pngtree-dark-gym-with-equipments-picture-image_2773570.jpg");
+
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://png.pngtree.com/background/20230528/original/pngtree-dark-gym-with-equipments-picture-image_2773570.jpg");
+  background-size: cover;
+}
+
+.for-boys {
+  border: 2px solid greenyellow;
+
+  float: right;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://www.shutterstock.com/image-photo/muscular-man-bodybuilder-training-gym-600nw-2196453277.jpg"); */
+
+  /* background-attachment: fixed; */
+  /* background-size: cover; */
+  background-position: top;
+  position: relative;
+
+  width: 50%;
+  height: 100%;
+
+  transition: 0.3s ease-in-out;
+}
+
+.boy-cmn {
+  border: 2px solid white;
+  /* margin: 15vh 10vw; */
+
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.boy-cmn h1 {
+  font-size: 45px;
+  margin-bottom: 5vh;
+
+  letter-spacing: 3px;
+  color: rgb(0, 0, 0);
+  /* text-shadow: -1px -1px 0 var(--TH5-main-3), 1px -1px 0 var(--TH5-main-3),
+      -1px 1px 0 var(--TH5-main-3), 1px 1px 0 var(--TH5-main-3); */
+  text-shadow: var(--text-shadow);
+  transition: 0.3s ease;
+}
+
+.boy-cmn h1:hover {
+  transform: scale(1.3);
+}
+
+.boy-cmn p {
+  font-size: 20px;
+}
+
+/* ------------------------------------------------------------------- */
+.cont-4 {
+  height: 101vh;
+  width: 100%;
+}
+
+.cont-4-txt {
+  border: 2px solid chartreuse;
+
+  margin-top: 10vh;
+  margin-bottom: 5vh;
+  text-align: center;
+}
+
+.cont-4 h6 {
+  font-size: 35px;
+  font-weight: 300;
+  letter-spacing: 3px;
+  color: #eee;
+  text-shadow: var(--txt-shadow-white);
+}
+
+.cont-4 h1 {
+  font-size: 75px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  color: #000;
+  text-shadow: var(--text-shadow);
+}
+
+.cont-4-flexcont {
+  display: flex;
+}
+
+.cmn-box {
+  flex: 1;
+  border: 2px solid yellow;
+
+  margin: 5vh 1.5vw;
+  padding: 1.7% 2.4%;
+  text-align: center;
+}
+
+.your-svg-class-or-id {
+  /* fill: #DA0037; */
+  fill: #eee;
+}
+
+.cmn-box img {
+  /* filter:saturate(10%) ; */
+  height: 103px;
+  width: 103px;
+  transition: filter 0.3s ease; /* Add a transition for a smooth effect */
+}
+
+.cmn-box h2 {
+  padding: 2vh 0;
+}
+
+/* ------------------------------------------------------------------- */
+@media screen and (max-width: 1000px) {
   .nav-item ul {
-
-    display: flex;
-    list-style: none;
-    align-items: center; /* Center the list items vertically */
+    display: none;
   }
-  
-  .nav-item ul li {
-    font-size: 20px;
-    padding: 0px 15px;
-  }
-
-
-  /* ------------------------------------------------------------------- */
-.cont-2{
-    border: 2px solid red;
-    height: 100vh;
 }
-
-  
-  /* ------------------------------------------------------------------- */
-  
-  
-  
-  /* ------------------------------------------------------------------- */
-  
-  
-  
-  /* ------------------------------------------------------------------- */
-  
-  
