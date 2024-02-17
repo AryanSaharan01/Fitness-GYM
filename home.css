@@ -143,8 +143,12 @@ nav {
   font-size: 110px;
   font-weight: 700;
   letter-spacing: 3px;
-
   color: var(--TH5-main-3);
+  transition: 0.3s ease;
+}
+
+.text-colour:hover {
+  color: #eee;
 }
 
 .cont-1-text :nth-child(4) {
@@ -313,15 +317,30 @@ nav {
 
 /* ------------------------------------------------------------------- */
 .cont-4 {
-  height: 101vh;
+  height: fit-content;
   width: 100%;
+}
+
+.sec-bg {
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+.parallax4 {
+  background-image: url("https://img.freepik.com/premium-photo/there-are-many-exercise-equipment-gym-room-with-lot-windows-generative-ai_958078-12471.jpg");
+
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://img.freepik.com/premium-photo/there-are-many-exercise-equipment-gym-room-with-lot-windows-generative-ai_958078-12471.jpg");
 }
 
 .cont-4-txt {
   border: 2px solid chartreuse;
 
-  margin-top: 10vh;
-  margin-bottom: 5vh;
+  background-color: #00000064;
+  backdrop-filter: blur(5px);
+  padding-top: 10vh;
+  padding-bottom: 5vh;
   text-align: center;
 }
 
@@ -338,7 +357,7 @@ nav {
   font-weight: 600;
   letter-spacing: 3px;
   color: #000;
-  text-shadow: var(--text-shadow);
+  text-shadow: var(--txt-shadow-white);
 }
 
 .cont-4-flexcont {
@@ -346,10 +365,15 @@ nav {
 }
 
 .cmn-box {
-  flex: 1;
   border: 2px solid yellow;
 
-  margin: 5vh 1.5vw;
+  flex: 1;
+  background-color: #00000064;
+  backdrop-filter: blur(5px);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  margin: 0px 1.5vw;
+  margin-bottom: 7vh;
   padding: 1.7% 2.4%;
   text-align: center;
 }
@@ -370,6 +394,81 @@ nav {
   padding: 2vh 0;
 }
 
+/* ------------------------------------------------------------------- */
+.cont-5 {
+  border: 2px solid sandybrown;
+}
+
+.sec-bg {
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+.parallax5 {
+  background-image: url("https://img.freepik.com/premium-photo/there-are-many-exercise-equipment-gym-room-with-lot-windows-generative-ai_958078-12471.jpg");
+
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://img.freepik.com/premium-photo/there-are-many-exercise-equipment-gym-room-with-lot-windows-generative-ai_958078-12471.jpg");
+}
+
+.cont-5 h1 {
+  font-size: 95px;
+  font-weight: 600;
+  text-align: center;
+  padding: 3vh;
+  letter-spacing: 5px;
+  color: #000000;
+  text-shadow: var(--txt-shadow-white);
+}
+
+.cont-5-flex {
+  border: 2px solid chartreuse;
+
+  margin: auto auto;
+  margin-bottom: 5vh;
+  display: flex;
+  justify-content: space-between;
+  width: 75%;
+}
+
+.cont-5-cmn {
+  backdrop-filter: blur(5px);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.cont-5-cmn img {
+  /* background-attachment: fixed; */
+  /* background-position: center; */
+  /* background-size: cover; */
+
+  height: 55vh;
+  width: 20vw;
+}
+
+.cont-5-cmn p {
+  font-size: 35px;
+  font-weight: 600;
+  text-align: center;
+  padding: 1vh;
+  letter-spacing: 2px;
+  /* color: #000000; */
+  /* text-shadow: var(--txt-shadow-white); */
+}
+
+.cont-5-cmn a {
+  text-decoration: none;
+  text-shadow: none;
+  transition: 0.3s ease;
+}
+
+.cont-5-cmn a:hover {
+  color: #000;
+  text-shadow: var(--text-shadow);
+}
+
+/* ------------------------------------------------------------------- */
 /* ------------------------------------------------------------------- */
 @media screen and (max-width: 1000px) {
   .nav-item ul {
