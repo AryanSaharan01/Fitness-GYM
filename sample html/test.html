@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Animation on Scroll</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .animate-text {
+            color: black;
+        
+            opacity: 0;
+            transform: translateY(50px);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+
+        .show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="animate-text" id="animatedText">
+        <h1>Your Animated Text</h1>
+        <p>This is some content that will animate on scroll.</p>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            window.addEventListener("scroll", revealText);
+
+            function revealText() {
+                var animatedText = document.getElementById("animatedText");
+                var position = animatedText.getBoundingClientRect().top;
+                var windowHeight = window.innerHeight;
+
+                if (position < windowHeight / 1.3) {
+                    animatedText.classList.add("show");
+                    window.removeEventListener("scroll", revealText);
+                }
+            }
+        });
+    </script>
+
+</body>
+</html>
