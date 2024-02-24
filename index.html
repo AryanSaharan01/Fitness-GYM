@@ -27,9 +27,9 @@
                 <ul>
                     <!-- <li>Home</li> -->
                     <li><a href="about.html">AboutUs</a></li>
-                    <li><a href="##">Services</a></li>
-                    <li><a href="##">Blog's</a></li>
-                    <li><a href="##">ContactUs</a></li>
+                    <li><a href="##"  onclick="scrollToServices()" >Services</a></li>
+                    <li><a href="##"  onclick="scrollToBlog()" >Blog's</a></li>
+                    <li><a href="contact.html">ContactUs</a></li>
                 </ul>
             </div>
         </nav>
@@ -89,7 +89,7 @@
     </div>
 
 
-    <div class="cont-4  sec-bg  parallax4 ">
+    <div class="cont-4  sec-bg  parallax4 "  id="service-scroll">
 
         <div class="cont-4-txt">
             <h6>Why choose US?</h6>
@@ -231,7 +231,7 @@
     </div>
 
 
-    <div class="cont-7  sec-bg  parallax7 ">
+    <div class="cont-7  sec-bg  parallax7 "   id="blog-scroll">
 
         <h1 class="heading-hover">FROM BLOG</h1>
 
@@ -369,18 +369,22 @@
 
         </footer>
 
-        <!-- <div class="sticky-social-icons">
-            <ul class="social-icons">
-                <li><a href="#"  target="_blank"><img src="static/images/facebook.png" alt="Instagram"></a></li>
-
-                <li><a href="#"  target="_blank"><img src="static/images/twitter.png" alt="Facebook"></a></li>
-
-                <li><a href="#"  target="_blank"><img src="static/images/instagram.png" alt="YouTube"></a></li>
-
-                <li><a href="#"  target="_blank"><img src="static/images/youtube.png" alt="Twitter"></a></li>
-            </ul>
-        </div> -->
     </div>
+
+    <script>
+        function scrollToBlog() {
+            document.getElementById('blog-scroll').scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+       
+       
+        function scrollToServices() {
+            document.getElementById('service-scroll').scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+    </script>
 
 </body>
 
