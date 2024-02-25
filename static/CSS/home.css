@@ -56,10 +56,10 @@ body {
 }
 
 .parallax1 {
-  background-image: url("static/images/hero-1.jpg");
+  background-image: url("../images/hero-1.jpg");
 
   background: linear-gradient(rgba(0, 0, 0, 0.355), rgba(0, 0, 0, 0.355)),
-    url("static/images/hero-1.jpg");
+    url("../images/hero-1.jpg");
   /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("static/images/hero-1.jpg"); */
   background-size: cover;
@@ -222,17 +222,15 @@ nav {
 }
 
 .parallax2 {
-  background-image: url("static/images/girl-parallex.jpg");
+  background-image: url("../images/girl-parallex.jpg");
 
-  /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("https://img.freepik.com/premium-photo/there-are-many-exercise-equipment-gym-room-with-lot-windows-generative-ai_958078-12471.jpg"); */
 }
 
 .for-girls {
   /* border: 2px solid greenyellow; */
 
   background: linear-gradient(rgba(0, 0, 0, 0.355), rgba(0, 0, 0, 0.355)),
-    url("static/images/girl.jpg");
+    url("../images/girl.jpg");
 
   /* background-attachment: fixed; */
   /* background-size: cover; */
@@ -293,7 +291,7 @@ nav {
 }
 
 .parallax3 {
-  background-image: url("static/images/boy-parallex.jpg");
+  background-image: url("../images/boy-parallex.jpg");
 
   /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("https://png.pngtree.com/background/20230528/original/pngtree-dark-gym-with-equipments-picture-image_2773570.jpg");
@@ -306,7 +304,7 @@ nav {
 
   float: right;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("static/images/boy.jpg");
+    url("../images/boy.jpg");
 
   /* background-attachment: fixed; */
   /* background-size: cover; */
@@ -367,10 +365,10 @@ nav {
 }
 
 .parallax4 {
-  background-image: url("https://img.freepik.com/premium-photo/there-are-many-exercise-equipment-gym-room-with-lot-windows-generative-ai_958078-12471.jpg");
+  background-image: url("../images/parallex-4bg.jpg");
 
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("https://img.freepik.com/premium-photo/there-are-many-exercise-equipment-gym-room-with-lot-windows-generative-ai_958078-12471.jpg");
+    url("../images/parallex-4bg.jpg");
 }
 
 .cont-4-txt {
@@ -463,10 +461,10 @@ nav {
 }
 
 .parallax5 {
-  background-image: url("static/images/boy-parallex.jpg");
+  background-image: url("../images/boy-parallex.jpg");
 
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("static/images/boy-parallex.jpg");
+    url("../images/boy-parallex.jpg");
 
   background-repeat: no-repeat;
   background-position: center;
