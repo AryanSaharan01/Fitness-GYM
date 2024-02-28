@@ -39,6 +39,23 @@ body {
     2px 2px 0 var(--TH5-main-4);
 }
 
+
+.heading-hover {
+  font-size: 95px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  color: #000;
+  transition: 0.3s ease;
+  text-shadow: var(--txt-shadow-white-B);
+}
+
+.heading-hover :hover {
+  /* transform: scale(1.1); */
+  text-shadow: var(--text-shadow-multi);
+}
+
+
+
 /* ------------------------------------------------------------- */
 
 .cont-1 {
@@ -251,10 +268,10 @@ nav {
   /* margin: 15vh 10vw; */
 
   text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  position: relative;
+  padding: 9vh 10vw;
+  /* margin: 50% 50%; */
+  /* transform: translate(-50%, -50%); */
 }
 
 .girl-cmn h1 {
@@ -325,10 +342,8 @@ nav {
   /* margin: 15vh 10vw; */
 
   text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  position: relative;
+  padding: 9vh 10vw;
 }
 
 .boy-cmn h1 {
@@ -395,19 +410,7 @@ nav {
   text-shadow: var(--text-shadow);
 }
 
-.cont-4 h1 {
-  font-size: 95px;
-  font-weight: 600;
-  letter-spacing: 3px;
-  color: #000;
-  transition: 0.3s ease;
-  text-shadow: var(--txt-shadow-white-B);
-}
 
-.cont-4 h1:hover {
-  /* transform: scale(1.1); */
-  text-shadow: var(--text-shadow-multi);
-}
 
 .cont-4-flexcont {
   display: flex;
@@ -472,17 +475,9 @@ nav {
 }
 
 .cont-5 h1 {
-  width: fit-content;
-  margin: auto auto;
-  /* backdrop-filter: blur(5px); */
-  font-size: 95px;
-  font-weight: 600;
   text-align: center;
   padding: 3vh;
   letter-spacing: 5px;
-  color: #000000;
-  text-shadow: var(--txt-shadow-white-B);
-  transition: 0.3s ease;
 }
 
 .cont-5 h1:hover {
@@ -554,21 +549,12 @@ nav {
 }
 
 .cont-6 h1 {
-  width: fit-content;
-  margin: auto auto;
-  /* backdrop-filter: blur(5px); */
-  font-size: 95px;
-  font-weight: 600;
   text-align: center;
   padding: 3vh;
   letter-spacing: 5px;
-  color: #000000;
-  text-shadow: var(--txt-shadow-white-B);
-  transition: 0.3s ease;
 }
 
 .cont-6 h1:hover {
-  /* transform: scale(1.1); */
   text-shadow: var(--text-shadow-multi);
 }
 
@@ -623,17 +609,9 @@ nav {
 }
 
 .cont-7 h1 {
-  width: fit-content;
-  margin: auto auto;
-  /* backdrop-filter: blur(5px); */
-  font-size: 95px;
-  font-weight: 600;
   text-align: center;
   padding: 3vh;
   letter-spacing: 5px;
-  color: #000000;
-  text-shadow: var(--txt-shadow-white-B);
-  transition: 0.3s ease;
 }
 
 .cont-7 h1:hover {
@@ -873,11 +851,7 @@ height: 30vh; */
   vertical-align: middle; 
 } */
 /* ------------------------------------------------------------------- */
-@media screen and (max-width: 1000px) {
-  .nav-item ul {
-    display: none;
-  }
-}
+
 
 /* .heading-hover{
   text-shadow: -1px -1px 0 var(--TH5-main-3), 1px -1px 0 var(--TH5-main-4),

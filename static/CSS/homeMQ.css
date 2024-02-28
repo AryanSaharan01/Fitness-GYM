@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+
+  background-size: cover;
+  color: white;
+
+  font-family: "Protest Revolution", sans-serif;
+}
+
+@media screen and (max-width: 1000px) {
+  .nav-item ul {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .heading-hover {
+    font-size: 87px;
+    font-weight: 600;
+    letter-spacing: 2px;
+  }
+
+  .cont-1-text {
+    margin-top: 14vh;
+    margin-right: 5vw;
+    font-family: "Protest Revolution", sans-serif;
+    font-weight: 300;
+    padding: 1.5vh 1.5vw;
+  }
+
+  .cont-1-text :nth-child(1) {
+    font-size: 27px;
+    /* color: var(--TH5-main-4); */
+    letter-spacing: 1px;
+  }
+
+  .cont-1-text :nth-child(2),
+  .text-colour,
+  .cont-1-text :nth-child(4) {
+    font-size: 100px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    /* color: rgb(0, 0, 0); */
+  }
+
+  .more-btn {
+    padding: 1.7vh 1.7vw;
+    font-size: 18px;
+    margin-top: 3vh;
+  }
+
+  .cont-2 {
+    height: 85vh;
+  }
+
+  .for-girls,
+  .for-boys {
+    width: 50%;
+    height: 100%;
+    border-radius: 0px;
+  }
+
+  .girl-cmn,
+  .boy-cmn {
+    text-align: center;
+    position: relative;
+    padding: 9vh 2vw;
+  }
+
+  .girl-cmn h1,
+  .boy-cmn h1 {
+    font-size: 47px;
+    margin-bottom: 4vh;
+    letter-spacing: 2px;
+  }
+  .girl-cmn p,
+  .boy-cmn p {
+    font-size: 18px;
+  }
+}
