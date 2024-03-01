@@ -39,7 +39,6 @@ body {
     2px 2px 0 var(--TH5-main-4);
 }
 
-
 .heading-hover {
   font-size: 95px;
   font-weight: 600;
@@ -53,8 +52,6 @@ body {
   /* transform: scale(1.1); */
   text-shadow: var(--text-shadow-multi);
 }
-
-
 
 /* ------------------------------------------------------------- */
 
@@ -240,7 +237,6 @@ nav {
 
 .parallax2 {
   background-image: url("../images/girl-parallex.jpg");
-
 }
 
 .for-girls {
@@ -410,8 +406,6 @@ nav {
   text-shadow: var(--text-shadow);
 }
 
-
-
 .cont-4-flexcont {
   display: flex;
 }
@@ -477,6 +471,7 @@ nav {
 .cont-5 h1 {
   text-align: center;
   padding: 3vh;
+  margin-bottom: 10vh;
   letter-spacing: 5px;
 }
 
@@ -486,28 +481,26 @@ nav {
 }
 
 .cont-5-flex {
-  /* border: 2px solid chartreuse; */
-
   border-radius: 25px;
-  backdrop-filter: blur(5px);
-  margin: auto auto;
+  /* backdrop-filter: blur(5px); */
+  margin: 0px auto;
   margin-bottom: 12vh;
-  display: flex;
-  justify-content: space-between;
-  width: 75%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  gap: 5vw;
+  width: 85%;
 }
 
 .cont-5-cmn {
-  backdrop-filter: blur(5px);
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
+  width: 100%;
 }
 
 .cont-5-img {
   /* border: 2px solid yellowgreen; */
 
   height: 55vh;
-  width: 20vw;
+  width: 100%;
 }
 
 .cont-5-img img {
@@ -515,7 +508,7 @@ nav {
 
   /* background-image: url("static/images/sample.jpeg"); */
   height: 55vh;
-  width: 20vw;
+  width: 100%;
   border-radius: 25px;
   background-repeat: no-repeat;
   background-position: center;
@@ -549,6 +542,7 @@ nav {
 }
 
 .cont-6 h1 {
+  margin-bottom: 8vh;
   text-align: center;
   padding: 3vh;
   letter-spacing: 5px;
@@ -612,6 +606,7 @@ nav {
   text-align: center;
   padding: 3vh;
   letter-spacing: 5px;
+  margin-bottom: 8vh;
 }
 
 .cont-7 h1:hover {
@@ -638,13 +633,6 @@ nav {
 .blog {
   /* position: relative; */
   /* border: 3px solid red; */
-
-  /* flex-direction: column; */
-  /* height: 100%;  */
-  /* height: 37vh ; */
-  /* width: 50%; */
-  /* width: fit-content; */
-
   display: flex;
   padding: 1vh 2vw;
   transition: 0.3s ease;
@@ -717,7 +705,7 @@ height: 30vh; */
   margin-bottom: 7vh;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  gap: 2vw;
 }
 
 .location,
@@ -851,7 +839,6 @@ height: 30vh; */
   vertical-align: middle; 
 } */
 /* ------------------------------------------------------------------- */
-
 
 /* .heading-hover{
   text-shadow: -1px -1px 0 var(--TH5-main-3), 1px -1px 0 var(--TH5-main-4),

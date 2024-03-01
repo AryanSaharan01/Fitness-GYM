@@ -17,7 +17,7 @@
 
 @media screen and (max-width: 900px) {
   .heading-hover {
-    font-size: 87px;
+    font-size: 80px;
     font-weight: 600;
     letter-spacing: 2px;
   }
@@ -79,4 +79,46 @@
   .boy-cmn p {
     font-size: 18px;
   }
+
+  .cont-4 h6 {
+    font-size: 29px;
+    font-weight: 250;
+  }
+
+  .cont-4-flexcont {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0px 3vw;
+  }
+
+  .cont-5-cmn p {
+    font-size: 29px;
+    font-weight: 600;
+  }
+
+  .cont-6 h1 {
+    margin-bottom: 8vh;
+  }
+
+  .price-box h2 {
+    font-size: 29px;
+  }
+
+  .amnt {
+    font-size: 55px;
+  }
+
+  .price-box p {
+    font-size: 17px;
+  }
+
+  .blog-heading {
+    font-size: 21px;
+  }
+
+
+
+
+
+
 }
