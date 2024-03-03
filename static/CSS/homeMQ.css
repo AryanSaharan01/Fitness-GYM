@@ -96,7 +96,8 @@
     margin-top: 3vh;
   }
 
-  .cont-2, .cont-3 {
+  .cont-2,
+  .cont-3 {
     height: 85vh;
   }
 
@@ -165,20 +166,19 @@
 /* -----------------  MQ  960  ----------------------------------- */
 
 @media screen and (max-width: 960px) {
-
   .prev,
-.next{
-  top: 30%;
-}
+  .next {
+    top: 30%;
+  }
 
-.cont-5-img {
-  height: 65vh;
-  width: 100%;
-}
+  .cont-5-img {
+    height: 65vh;
+    width: 100%;
+  }
 
-.cont-5-img img{
-  height: 65vh;
-}
+  .cont-5-img img {
+    height: 65vh;
+  }
   .ftr-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -193,7 +193,6 @@
     align-items: center;
   }
 }
-
 
 /* -----------------  MQ  800  ------------------------------- */
 
@@ -220,14 +219,14 @@
 /* -----------------  MQ  660  ------------------------------- */
 
 @media screen and (max-width: 660px) {
-
   .heading-hover {
     font-size: 74px;
     font-weight: 600;
     letter-spacing: 2px;
   }
 
-  .cont-2, .cont-3 {
+  .cont-2,
+  .cont-3 {
     height: 90vh;
   }
 
@@ -267,9 +266,9 @@
   }
 
   .cont-5-flex {
-    grid-template-columns: repeat(auto-fill, minmax(30vw, 1fr));
+    /* grid-template-columns: repeat(auto-fill, minmax(30vw, 1fr)); */
     gap: 2vw;
-    width: 95%;
+    width: 35%;
   }
 
   .cont-5-cmn p {
@@ -287,27 +286,23 @@
   .blog-heading {
     font-size: 19px;
   }
-
- 
 }
 
 /* -----------------  MQ  460  ------------------------------- */
 
 @media screen and (max-width: 460px) {
-
   .heading-hover {
     font-size: 62px;
     font-weight: 600;
     letter-spacing: 0px;
   }
 
-  .cont-1{
+  .cont-1 {
     height: 100vh;
     /* padding-bottom: 5vh; */
   }
 
   .cont-1-text {
-
     width: 85%;
     margin-top: 14vh;
     margin-right: 0px;
@@ -334,7 +329,8 @@
     margin-top: 2vh;
   }
 
-  .cont-2, .cont-3 {
+  .cont-2,
+  .cont-3 {
     height: fit-content;
   }
 
@@ -391,19 +387,168 @@
     /* justify-content: space-between; */
   }
 
+  .blog-grid {
+    display: grid;
+    width: 80%;
+    margin-bottom: 7vh;
+    /* grid-template-columns: repeat(1, minmax(45%, 1fr)); */
+    grid-template-columns: repeat(1, minmax(80vw, 1fr));
+    gap: 15px;
+  }
   .blog-heading {
     font-size: 19px;
   }
 
- 
+  .ftr-flex{
+    margin: 0px;
+  }
 }
 
+/* -----------------  MQ  350  ------------------------------- */
+@media screen and (max-width: 450px){
 
+  .logo img{
+    height: 31px;
+  width: 129px;}
+
+  .heading-hover {
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: 0px;
+  }
+
+  .cont-1{
+    height: 70vh;
+  }
+
+  .cont-1-text {
+    width: 85%;
+    margin-top: 14vh;
+    margin-right: 0px;
+    font-weight: 300;
+    padding: 1.5vh 1.5vw;
+  }
+
+  .cont-1-text :nth-child(1) {
+    font-size: 15px;
+    letter-spacing: 1px;
+  }
+
+  .cont-1-text :nth-child(2),
+  .text-colour,
+  .cont-1-text :nth-child(4) {
+    font-size: 48px;
+    font-weight: 600;
+  }
+
+  .more-btn {
+    padding: 1vh 1vw;
+    font-size: 13px;
+    margin-top: 2vh;
+  }
+
+  .cont-2,
+  .cont-3 {
+    height: 70vh;
+  }
+
+  .for-girls,
+  .for-boys {
+    width: 60%;
+    height: 100%;
+  }
+
+  .girl-cmn,
+  .boy-cmn {
+    text-align: center;
+    position: relative;
+    padding: 9vh 2vw;
+  }
+
+  .girl-cmn h1,
+  .boy-cmn h1 {
+    font-size: 30px;
+    margin-bottom: 4vh;
+    letter-spacing: 1.5px;
+  }
+  .girl-cmn p,
+  .boy-cmn p {
+    font-size: 12px;
+  }
+
+  .cont-4 h6 {
+    font-size: 14px;
+    font-weight: lighter;
+  }
+
+  .cont-4-flexcont {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0px 3vw;
+    padding-bottom: 7vh;
+  }
+
+  .cmn-box{
+    font-size: 11px;
+    margin-bottom: 2vh;
+  }
+
+  .cont-5-flex {
+    grid-template-columns: repeat(auto-fill, minmax(30vw, 1fr));
+    gap: 2vw;
+    width: 70%;
+  }
+
+  .cont-5-cmn p {
+    font-size: 24px;
+    font-weight: 500;
+  }
+
+  .cont-6{
+    margin-bottom: 10vh;
+  }
+
+  .cont-6-flex {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(75%, 1fr));
+    gap: 15px;
+    /* justify-content: space-between; */
+  }
+
+  .blog-grid {
+    display: grid;
+    width: 80%;
+    margin-bottom: 7vh;
+    /* grid-template-columns: repeat(1, minmax(45%, 1fr)); */
+    grid-template-columns: repeat(1, minmax(80vw, 1fr));
+    gap: 15px;
+  }
+  .blog-heading {
+    font-size: 19px;
+  }
+
+
+
+  .ftr-grid{
+    display: none;
+  }
+
+  .ftr-1 p{
+    font-size: 12px;
+  }
+
+  .ftr-2 h1, .ftr-3 h1{
+    font-size: 18px;
+  }
+
+  .ftr-2 ul li a {
+   font-size: 12px;
+  }
+
+  .ftr-3 ul li a {
+   font-size: 12px;
+  }
+}
 /* -----------------  MQ  660  ------------------------------- */
 
-
 /* -----------------  MQ  660  ------------------------------- */
-
-
-/* -----------------  MQ  660  ------------------------------- */
-
