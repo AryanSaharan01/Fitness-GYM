@@ -23,9 +23,10 @@
   }
 
   .cont-1 {
-    height: 100vh;
-    padding-top: 5vh;
-    padding-bottom: 15vh;
+max-height: 48vh;
+min-height: 45vh;
+padding-top: 5vh;
+    padding-bottom: 10vh;
   }
 
   .cont-1-text {
@@ -50,11 +51,31 @@
     letter-spacing: 2px;
     /* color: rgb(0, 0, 0); */
   }
+
+  .cont-2,
+  .cont-3 {
+    max-height: 45vh;
+    min-height: 39vh;
+  }
+
+  .for-girls,
+  .for-boys {
+    width: 50%;
+    height: 100%;
+    border-radius: 0px;
+  }
+
+  .girl-cmn,
+  .boy-cmn {
+    text-align: center;
+    position: relative;
+    padding: 9vh 2vw;
+  }
 }
 
 /* ----------------  MQ  900  ----------------------------------------- */
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 100px) {
   .heading-hover {
     font-size: 80px;
     font-weight: 600;
@@ -180,7 +201,7 @@
 
   .cont-5-img {
     height: 65vh;
-    width: 100%;
+    /* width: 100%; */
   }
 
   .cont-5-img img {
@@ -240,7 +261,7 @@
   .for-girls,
   .for-boys {
     width: 50%;
-    height: 100%;
+    height: fit-content;
   }
 
   .girl-cmn,
@@ -426,6 +447,7 @@
 
   .cont-1{
     height: 70vh;
+    margin-right: 0px;
   }
 
   .cont-1-text {
@@ -461,8 +483,8 @@
 
   .for-girls,
   .for-boys {
-    width: 60%;
-    height: 100%;
+    width: 100%;
+    height: fit-content;
   }
 
   .girl-cmn,
