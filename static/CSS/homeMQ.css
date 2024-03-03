@@ -511,6 +511,14 @@
     font-weight: 500;
   }
 
+  .cont-5-img{
+    height: 30vh;
+  }
+
+  .cont-5-img  img{
+    height: 30vh;
+  }
+
   .cont-6{
     margin-bottom: 10vh;
   }

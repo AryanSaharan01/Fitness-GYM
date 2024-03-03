@@ -407,7 +407,9 @@ nav {
 }
 
 .cont-4-flexcont {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
 }
 
 .cmn-box {
