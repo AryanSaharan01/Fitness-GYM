@@ -336,7 +336,7 @@
   }
 
   .cont-2, .cont-3 {
-    height: 90vh;
+    height: fit-content;
   }
 
   .for-girls,
