@@ -28,8 +28,8 @@
                 <ul>
                     <!-- <li>Home</li> -->
                     <li><a href="about.html">AboutUs</a></li>
-                    <li><a href="##"  onclick="scrollToServices()" >Services</a></li>
-                    <li><a href="##"  onclick="scrollToBlog()" >Blog's</a></li>
+                    <li><a href="##" onclick="scrollToServices()">Services</a></li>
+                    <li><a href="##" onclick="scrollToBlog()">Blog's</a></li>
                     <li><a href="contact.html">ContactUs</a></li>
                 </ul>
             </div>
@@ -90,7 +90,7 @@
     </div>
 
 
-    <div class="cont-4  sec-bg  parallax4 "  id="service-scroll">
+    <div class="cont-4  sec-bg  parallax4 " id="service-scroll">
 
         <div class="cont-4-txt">
             <h6>Why choose US?</h6>
@@ -154,7 +154,7 @@
 
         <div class="cont-5-flex">
 
-            <div class="cont-5-cmn">
+            <div class="cont-5-cmn  fade">
                 <!-- <img src="static/images/sample.jpeg" alt=""> -->
                 <div class="cont-5-img  cont-5-1">
                     <img src="static/images/sample.jpeg" alt="">
@@ -163,7 +163,7 @@
             </div>
 
 
-            <div class="cont-5-cmn">
+            <div class="cont-5-cmn  fade">
                 <!-- <img src="static/images/sample.jpeg" alt=""> -->
                 <div class="cont-5-img  cont-5-2">
                     <img src="static/images/boy.jpg" alt="">
@@ -172,13 +172,17 @@
             </div>
 
 
-            <div class="cont-5-cmn">
+            <div class="cont-5-cmn  fade">
                 <div class="cont-5-img  cont-5-3">
                     <img src="static/images/girl.jpg" alt="">
                 </div>
                 <p><a href="##">WEIGHT LOSS</a></p>
             </div>
 
+            <!-- ------------------------------------------- -->
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+            <!-- ------------------------------------------- -->
         </div>
 
     </div>
@@ -232,7 +236,7 @@
     </div>
 
 
-    <div class="cont-7  sec-bg  parallax7 "   id="blog-scroll">
+    <div class="cont-7  sec-bg  parallax7 " id="blog-scroll">
 
         <h1 class="heading-hover">FROM BLOG</h1>
 
@@ -247,8 +251,8 @@
                     <div class="blog-date">27 Feb</div>
 
 
-                    <div class="blog-content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse tempore
-                        blanditiis nihil recusandae eius animi. Mollitia, optio ducimus? Lorem ipsum dolor, sit amet
+                    <div class="blog-content"> recusandae eius animi. Mollitia, optio ducimus? Lorem ipsum dolor, sit
+                        amet
                         consectetur adipisicing elit. Voluptas, quibusdam voluptate voluptatibus nobis doloremque
                         delectus impedit tenetur eius porro. Accusantium dolor sit incidunt quos.</div>
                 </div>
@@ -262,7 +266,7 @@
                     <div class="blog-date">27 Feb</div>
 
 
-                    <div class="blog-content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse tempore
+                    <div class="blog-content"> ipsum dolor sit amet consectetur, adipisicing elit. Esse tempore
                         blanditiis nihil recusandae eius animi. Mollitia, optio ducimus? Lorem ipsum dolor, sit amet
                         consectetur adipisicing elit. Voluptas, quibusdam voluptate voluptatibus nobis doloremque
                         delectus impedit tenetur eius porro. Accusantium dolor sit incidunt quos.</div>
@@ -304,7 +308,7 @@
                 <div class="mobile ">
                     <img src="static/images/smartphone.png" alt="">
                     <p>125-711-811 &nbsp;|&nbsp; </p>
-                    <p>&nbsp; 125-668-886</p>
+                    <p> 125-668-886</p>
                 </div>
 
                 <div class="mail ">
@@ -379,14 +383,45 @@
                 behavior: 'smooth'
             });
         }
-       
-       
+
+
         function scrollToServices() {
             document.getElementById('service-scroll').scrollIntoView({
                 behavior: 'smooth'
             });
         }
+
+
+        // --------------------------
+        let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("cont-5-cmn");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = slides.length }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+    }
+        // --------------------------
     </script>
+
 
 </body>
 

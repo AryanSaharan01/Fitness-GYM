@@ -15,11 +15,56 @@
   }
 }
 
+@media screen and (max-width: 1024px) {
+  .heading-hover {
+    font-size: 87px;
+    font-weight: 600;
+    letter-spacing: 2px;
+  }
+
+  .cont-1 {
+    height: 100vh;
+    padding-top: 5vh;
+    padding-bottom: 15vh;
+  }
+
+  .cont-1-text {
+    margin-top: 14vh;
+    margin-right: 5vw;
+    font-family: "Protest Revolution", sans-serif;
+    font-weight: 300;
+    padding: 1.5vh 1.5vw;
+  }
+
+  .cont-1-text :nth-child(1) {
+    font-size: 27px;
+    /* color: var(--TH5-main-4); */
+    letter-spacing: 1px;
+  }
+
+  .cont-1-text :nth-child(2),
+  .text-colour,
+  .cont-1-text :nth-child(4) {
+    font-size: 100px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    /* color: rgb(0, 0, 0); */
+  }
+}
+
+/* ----------------  MQ  900  ----------------------------------------- */
+
 @media screen and (max-width: 900px) {
   .heading-hover {
     font-size: 80px;
     font-weight: 600;
     letter-spacing: 2px;
+  }
+
+  .cont-1 {
+    height: 100vh;
+    padding-top: 5vh;
+    padding-bottom: 15vh;
   }
 
   .cont-1-text {
@@ -51,7 +96,7 @@
     margin-top: 3vh;
   }
 
-  .cont-2 {
+  .cont-2, .cont-3 {
     height: 85vh;
   }
 
@@ -115,10 +160,47 @@
   .blog-heading {
     font-size: 21px;
   }
-
 }
 
-@media screen and (max-width: 700px){
+/* -----------------  MQ  960  ----------------------------------- */
+
+@media screen and (max-width: 960px) {
+
+  .prev,
+.next{
+  top: 30%;
+}
+
+.cont-5-img {
+  height: 65vh;
+  width: 100%;
+}
+
+.cont-5-img img{
+  height: 65vh;
+}
+  .ftr-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2vw;
+  }
+
+  .location,
+  .mobile,
+  .mail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+/* -----------------  MQ  800  ------------------------------- */
+
+@media screen and (max-width: 800px) {
+  .blog-img {
+    width: 60%;
+  }
 
   .ftr-grid {
     display: grid;
@@ -127,13 +209,202 @@
   }
 
   .location,
-.mobile,
-.mail {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  .mobile,
+  .mail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* -----------------  MQ  660  ------------------------------- */
+
+@media screen and (max-width: 660px) {
+
+  .heading-hover {
+    font-size: 74px;
+    font-weight: 600;
+    letter-spacing: 2px;
+  }
+
+  .cont-2, .cont-3 {
+    height: 90vh;
+  }
+
+  .for-girls,
+  .for-boys {
+    width: 50%;
+    height: 100%;
+  }
+
+  .girl-cmn,
+  .boy-cmn {
+    text-align: center;
+    position: relative;
+    padding: 9vh 2vw;
+  }
+
+  .girl-cmn h1,
+  .boy-cmn h1 {
+    font-size: 42px;
+    margin-bottom: 4vh;
+    letter-spacing: 1.5px;
+  }
+  .girl-cmn p,
+  .boy-cmn p {
+    font-size: 16px;
+  }
+
+  .cont-4 h6 {
+    font-size: 20px;
+    font-weight: 100;
+  }
+
+  .cont-4-flexcont {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0px 3vw;
+  }
+
+  .cont-5-flex {
+    grid-template-columns: repeat(auto-fill, minmax(30vw, 1fr));
+    gap: 2vw;
+    width: 95%;
+  }
+
+  .cont-5-cmn p {
+    font-size: 24px;
+    font-weight: 500;
+  }
+
+  .cont-6-flex {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(45%, 1fr));
+    gap: 15px;
+    /* justify-content: space-between; */
+  }
+
+  .blog-heading {
+    font-size: 19px;
+  }
+
+ 
+}
+
+/* -----------------  MQ  460  ------------------------------- */
+
+@media screen and (max-width: 460px) {
+
+  .heading-hover {
+    font-size: 62px;
+    font-weight: 600;
+    letter-spacing: 0px;
+  }
+
+  .cont-1{
+    height: 100vh;
+    /* padding-bottom: 5vh; */
+  }
+
+  .cont-1-text {
+    border: 2px solid greenyellow;
+
+    width: 85%;
+    margin-top: 14vh;
+    margin-right: 0px;
+    font-family: "Protest Revolution", sans-serif;
+    font-weight: 300;
+    padding: 1.5vh 1.5vw;
+  }
+
+  .cont-1-text :nth-child(1) {
+    font-size: 22px;
+    letter-spacing: 1px;
+  }
+
+  .cont-1-text :nth-child(2),
+  .text-colour,
+  .cont-1-text :nth-child(4) {
+    font-size: 71px;
+    font-weight: 600;
+  }
+
+  .more-btn {
+    padding: 1vh 1vw;
+    font-size: 13px;
+    margin-top: 2vh;
+  }
+
+  .cont-2, .cont-3 {
+    height: 90vh;
+  }
+
+  .for-girls,
+  .for-boys {
+    width: 60%;
+    height: 100%;
+  }
+
+  .girl-cmn,
+  .boy-cmn {
+    text-align: center;
+    position: relative;
+    padding: 9vh 2vw;
+  }
+
+  .girl-cmn h1,
+  .boy-cmn h1 {
+    font-size: 42px;
+    margin-bottom: 4vh;
+    letter-spacing: 1.5px;
+  }
+  .girl-cmn p,
+  .boy-cmn p {
+    font-size: 16px;
+  }
+
+  .cont-4 h6 {
+    font-size: 20px;
+    font-weight: 100;
+  }
+
+  .cont-4-flexcont {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0px 3vw;
+  }
+
+  .cont-5-flex {
+    grid-template-columns: repeat(auto-fill, minmax(30vw, 1fr));
+    gap: 2vw;
+    width: 95%;
+  }
+
+  .cont-5-cmn p {
+    font-size: 24px;
+    font-weight: 500;
+  }
+
+  .cont-6-flex {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(45%, 1fr));
+    gap: 15px;
+    /* justify-content: space-between; */
+  }
+
+  .blog-heading {
+    font-size: 19px;
+  }
+
+ 
 }
 
 
+/* -----------------  MQ  660  ------------------------------- */
 
-}
+
+/* -----------------  MQ  660  ------------------------------- */
+
+
+/* -----------------  MQ  660  ------------------------------- */
+
