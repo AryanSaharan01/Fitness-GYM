@@ -66,6 +66,21 @@ body {
   background-position: center;
 }
 
+.heading-hover{
+  font-size: 95px;
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 3px;
+  color: #000;
+  transition: 0.3s ease;
+  text-shadow: var(--txt-shadow-white-B);
+}
+
+.heading-hover:hover {
+  /* transform: scale(1.1); */
+  text-shadow: var(--text-shadow-multi);
+}
+
 /* ---------------------------------------------------------------------- */
 nav {
   /* border: 2px solid rosybrown; */
@@ -179,25 +194,14 @@ nav {
 }
 
 .cont-2 h1 {
-  font-size: 95px;
-  text-align: center;
   margin: 8vh 0;
-  font-weight: 600;
-  letter-spacing: 3px;
-  color: #000;
-  transition: 0.3s ease;
-  text-shadow: var(--txt-shadow-white-B);
-}
-
-.cont-2 h1:hover {
-  /* transform: scale(1.1); */
-  text-shadow: var(--text-shadow-multi);
 }
 
 .cont-2-flex {
   /* border: 5px solid greenyellow; */
 
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   padding: 0 3vw;
 }
 
@@ -231,19 +235,7 @@ nav {
 }
 
 .cont-3 h1 {
-  font-size: 95px;
-  text-align: center;
   margin: 5vh 0;
-  font-weight: 600;
-  letter-spacing: 3px;
-  color: #000;
-  transition: 0.3s ease;
-  text-shadow: var(--txt-shadow-white-B);
-}
-
-.cont-3 h1:hover {
-  /* transform: scale(1.1); */
-  text-shadow: var(--text-shadow-multi);
 }
 
 .trainer-flex {

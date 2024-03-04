@@ -414,8 +414,6 @@ nav {
 
 .cmn-box {
   /* border: 2px solid yellow; */
-
-  flex: 1;
   background-color: #00000064;
   backdrop-filter: blur(5px);
   border-bottom-left-radius: 20px;

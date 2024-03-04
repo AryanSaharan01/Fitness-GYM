@@ -9,7 +9,7 @@
   font-family: "Protest Revolution", sans-serif;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 960px) {
   .nav-item ul {
     display: none;
   }
@@ -283,8 +283,8 @@
 
   .cont-2,
   .cont-3 {
-    max-height: 45vh;
-    min-height: 39vh;
+    max-height: 120vh;
+    min-height: 120vh;
   }
 
   .for-girls,
@@ -511,7 +511,7 @@
   }
 }
 
-/* -----------------  MQ  350  ------------------------------- */
+/* -----------------  MQ  450  ------------------------------- */
 @media screen and (max-width: 450px) {
   .logo img {
     height: 31px;
