@@ -22,6 +22,10 @@
     letter-spacing: 2px;
   }
 
+  .more-btn{
+    padding: 1.2vh 1.2vw;
+  }
+
   .cont-1 {
     max-height: 48vh;
     min-height: 45vh;
@@ -70,6 +74,30 @@
     text-align: center;
     position: relative;
     padding: 9vh 2vw;
+  }
+
+  .cmn-box{
+    margin-bottom: 5vh;
+  }
+
+  .cont-5-flex{
+    width: 50%;
+  }
+
+  .cont-5-cmn p{
+    font-size: 61px;
+  }
+
+  .prev, .next{
+    font-size: 30px;
+  }
+
+  .cont-6 h1{
+    margin-bottom: 4vh;
+  }
+
+  .price-box p{
+    padding: 1vh 0;
   }
 }
 
@@ -222,6 +250,58 @@
 /* -----------------  MQ  800  ------------------------------- */
 
 @media screen and (max-width: 800px) {
+
+  .cont-1 {
+    max-height: 100vh;
+    min-height: 45vh;
+    padding-top: 5vh;
+    padding-bottom: 20vh;
+  }
+
+  .cont-1-text {
+    margin-top: 10vh;
+    margin-right: 5vw;
+    font-family: "Protest Revolution", sans-serif;
+    font-weight: 300;
+    padding: 1.5vh 1.5vw;
+  }
+
+  .cont-1-text :nth-child(1) {
+    font-size: 27px;
+    /* color: var(--TH5-main-4); */
+    letter-spacing: 1px;
+  }
+
+  .cont-1-text :nth-child(2),
+  .text-colour,
+  .cont-1-text :nth-child(4) {
+    font-size: 85px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    /* color: rgb(0, 0, 0); */
+  }
+
+  .cont-2,
+  .cont-3 {
+    max-height: 45vh;
+    min-height: 39vh;
+  }
+
+  .for-girls,
+  .for-boys {
+    width: 50%;
+    height: 100%;
+    border-radius: 0px;
+  }
+
+  .girl-cmn,
+  .boy-cmn {
+    text-align: center;
+    position: relative;
+    padding: 9vh 2vw;
+  }
+
+
   .blog-img {
     width: 60%;
   }
@@ -313,9 +393,9 @@
   }
 }
 
-/* -----------------  MQ  460  ------------------------------- */
+/* -----------------  MQ  480  ------------------------------- */
 
-@media screen and (max-width: 460px) {
+@media screen and (max-width: 480px) {
   .heading-hover {
     font-size: 62px;
     font-weight: 600;
@@ -356,7 +436,7 @@
 
   .cont-2,
   .cont-3 {
-    height: fit-content;
+    /* height: fit-content; */
   }
 
   .for-girls,
@@ -369,7 +449,8 @@
   .boy-cmn {
     text-align: center;
     position: relative;
-    padding: 9vh 2vw;
+    padding: 2vh 2vw;
+    padding-bottom: 2vh;
   }
 
   .girl-cmn h1,
@@ -426,6 +507,7 @@
 
   .ftr-flex {
     margin: 0px;
+    width: 95%;
   }
 }
 
