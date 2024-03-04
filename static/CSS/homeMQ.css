@@ -23,9 +23,9 @@
   }
 
   .cont-1 {
-max-height: 48vh;
-min-height: 45vh;
-padding-top: 5vh;
+    max-height: 48vh;
+    min-height: 45vh;
+    padding-top: 5vh;
     padding-bottom: 10vh;
   }
 
@@ -75,7 +75,7 @@ padding-top: 5vh;
 
 /* ----------------  MQ  900  ----------------------------------------- */
 
-@media screen and (max-width: 100px) {
+/* @media screen and (max-width: 100px) {
   .heading-hover {
     font-size: 80px;
     font-weight: 600;
@@ -90,14 +90,12 @@ padding-top: 5vh;
 
   .cont-1-text {
     margin-top: 14vh;
-    /* margin-right: 5vw; */
     font-weight: 300;
     padding: 1.5vh 1.5vw;
   }
 
   .cont-1-text :nth-child(1) {
     font-size: 27px;
-    /* color: var(--TH5-main-4); */
     letter-spacing: 1px;
   }
 
@@ -107,7 +105,6 @@ padding-top: 5vh;
     font-size: 140px;
     font-weight: 600;
     letter-spacing: 2px;
-    /* color: rgb(0, 0, 0); */
   }
 
   .more-btn {
@@ -157,11 +154,11 @@ padding-top: 5vh;
     padding: 0px 3vw;
   }
 
-  .cont-5-img{
+  .cont-5-img {
     height: 30vh;
   }
 
-  .cont-5-img img{
+  .cont-5-img img {
     height: 30vh;
   }
 
@@ -189,7 +186,7 @@ padding-top: 5vh;
   .blog-heading {
     font-size: 21px;
   }
-}
+} */
 
 /* -----------------  MQ  960  ----------------------------------- */
 
@@ -427,17 +424,17 @@ padding-top: 5vh;
     font-size: 19px;
   }
 
-  .ftr-flex{
+  .ftr-flex {
     margin: 0px;
   }
 }
 
 /* -----------------  MQ  350  ------------------------------- */
-@media screen and (max-width: 450px){
-
-  .logo img{
+@media screen and (max-width: 450px) {
+  .logo img {
     height: 31px;
-  width: 129px;}
+    width: 129px;
+  }
 
   .heading-hover {
     font-size: 40px;
@@ -445,7 +442,7 @@ padding-top: 5vh;
     letter-spacing: 0px;
   }
 
-  .cont-1{
+  .cont-1 {
     height: 70vh;
     margin-right: 0px;
   }
@@ -517,7 +514,7 @@ padding-top: 5vh;
     padding-bottom: 7vh;
   }
 
-  .cmn-box{
+  .cmn-box {
     font-size: 11px;
     margin-bottom: 2vh;
   }
@@ -533,15 +530,15 @@ padding-top: 5vh;
     font-weight: 500;
   }
 
-  .cont-5-img{
+  .cont-5-img {
     height: 30vh;
   }
 
-  .cont-5-img  img{
+  .cont-5-img img {
     height: 30vh;
   }
 
-  .cont-6{
+  .cont-6 {
     margin-bottom: 10vh;
   }
 
@@ -564,26 +561,29 @@ padding-top: 5vh;
     font-size: 21px;
   }
 
-
-
-  .ftr-grid{
+  .ftr-grid {
     display: none;
   }
 
-  .ftr-1 p{
+  .ftr-flex{
+    width: 100%;
+  }
+
+  .ftr-1 p {
     font-size: 13px;
   }
 
-  .ftr-2 h1, .ftr-3 h1{
+  .ftr-2 h1,
+  .ftr-3 h1 {
     font-size: 20px;
   }
 
   .ftr-2 ul li a {
-   font-size: 13px;
+    font-size: 13px;
   }
 
   .ftr-3 ul li a {
-   font-size: 13px;
+    font-size: 13px;
   }
 }
 /* -----------------  MQ  660  ------------------------------- */
