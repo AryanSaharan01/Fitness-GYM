@@ -261,7 +261,7 @@
 
   .cont-1 {
     max-height: 100vh;
-    min-height: 45vh;
+    min-height: 55vh;
     padding-top: 5vh;
     padding-bottom: 20vh;
   }
@@ -291,7 +291,7 @@
 
   .cont-2,
   .cont-3 {
-    max-height: 120vh;
+    max-height: 90vh;
     /* min-height: 120vh; */
   }
 
@@ -309,6 +309,17 @@
     padding: 9vh 2vw;
   }
 
+  
+  .girl-cmn h1,
+  .boy-cmn h1{
+    font-size: 38px;
+  }
+
+  
+  .girl-cmn p,
+  .boy-cmn p{
+    font-size: 16px;
+  }
 
   .blog-img {
     width: 60%;
