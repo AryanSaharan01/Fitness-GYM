@@ -15,6 +15,14 @@
   }
 }
 
+@media screen and (max-width: 995px) {
+  .cont-1 {
+    height: 90vh;
+    padding-top: 5vh;
+    padding-bottom: 10vh;
+  }
+}
+
 @media screen and (max-width: 1024px) {
   .heading-hover {
     font-size: 87px;
@@ -27,8 +35,8 @@
   }
 
   .cont-1 {
-    max-height: 48vh;
-    min-height: 45vh;
+    /* max-height: 48vh; */
+    min-height: 47vh;
     padding-top: 5vh;
     padding-bottom: 10vh;
   }
@@ -58,8 +66,8 @@
 
   .cont-2,
   .cont-3 {
-    max-height: 45vh;
-    min-height: 39vh;
+    /* max-height: 45vh; */
+    min-height: 41vh;
   }
 
   .for-girls,
