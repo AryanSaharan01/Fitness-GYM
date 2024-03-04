@@ -291,7 +291,7 @@
 
   .cont-2,
   .cont-3 {
-    max-height: 90vh;
+    height: 90vh;
     /* min-height: 120vh; */
   }
 
