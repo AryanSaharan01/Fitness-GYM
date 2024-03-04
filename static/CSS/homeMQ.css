@@ -292,7 +292,7 @@
   .cont-2,
   .cont-3 {
     max-height: 120vh;
-    min-height: 120vh;
+    /* min-height: 120vh; */
   }
 
   .for-girls,
@@ -403,7 +403,7 @@
 
 /* -----------------  MQ  480  ------------------------------- */
 
-@media screen and (max-width: 480px) {
+/* @media screen and (max-width: 480px) {
   .heading-hover {
     font-size: 62px;
     font-weight: 600;
@@ -412,7 +412,6 @@
 
   .cont-1 {
     height: 100vh;
-    /* padding-bottom: 5vh; */
   }
 
   .cont-1-text {
@@ -442,10 +441,7 @@
     margin-top: 2vh;
   }
 
-  .cont-2,
-  .cont-3 {
-    /* height: fit-content; */
-  }
+ 
 
   .for-girls,
   .for-boys {
@@ -498,14 +494,12 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(45%, 1fr));
     gap: 15px;
-    /* justify-content: space-between; */
   }
 
   .blog-grid {
     display: grid;
     width: 80%;
     margin-bottom: 7vh;
-    /* grid-template-columns: repeat(1, minmax(45%, 1fr)); */
     grid-template-columns: repeat(1, minmax(80vw, 1fr));
     gap: 15px;
   }
@@ -517,7 +511,7 @@
     margin: 0px;
     width: 95%;
   }
-}
+} */
 
 /* -----------------  MQ  450  ------------------------------- */
 @media screen and (max-width: 450px) {
@@ -535,6 +529,7 @@
   .cont-1 {
     height: 70vh;
     margin-right: 0px;
+    padding-bottom: 0px;
   }
 
   .cont-1-text {
@@ -565,7 +560,7 @@
 
   .cont-2,
   .cont-3 {
-    height: 70vh;
+    height: 60vh;
   }
 
   .for-girls,
