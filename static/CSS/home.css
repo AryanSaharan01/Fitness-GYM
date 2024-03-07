@@ -54,6 +54,14 @@ body {
 }
 
 
+.nav-sliding img{
+  height: 50px;
+  float: right;
+  margin-right: 5vw;
+
+  display: none;
+}
+
 /* ------------------------------------------------------------- */
 
 .cont-1 {
