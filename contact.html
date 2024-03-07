@@ -15,6 +15,7 @@
 
 
     <link rel="stylesheet" href="static/CSS/contact.css">
+    <link rel="stylesheet" href="static/CSS/common.css">
     <link rel="stylesheet" href="static/CSS/font-themes.css">
 
 </head>
@@ -28,9 +29,18 @@
                 <ul>
                     <!-- <li>Home</li> -->
                     <li><a href="about.html">AboutUs</a></li>
-                    <li><a href="index.html">Services</a></li>
-                    <li><a href="index.html">Blog's</a></li>
+                    <li><a href="##" onclick="scrollToServices()">Services</a></li>
+                    <li><a href="##" onclick="scrollToBlog()">Blog's</a></li>
                     <li><a href="contact.html">ContactUs</a></li>
+                    <div class="dropdown">
+                        <button onclick="myFunction()" class="dropbtn">Pages ⇩</button>
+                        <div id="myDropdown" class="dropdown-content">
+                            <a href="BMI_calculator.html">BMI Calculator</a>
+                            <a href="#">Personal Dashboard</a>
+                            <a href="#">Locate GYM</a>
+                            <a href="#">Entry Records</a>
+                        </div>
+                    </div>
                 </ul>
             </div>
         </nav>
@@ -174,9 +184,27 @@
             <p class="cprt">Copyright&copy; 2024 Hack KRMU-3.0. All Rights Reserved | Made by ARYAN SAHARAN</p>
 
         </footer>
-
     </div>
 
+    <script>
+          function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown menu if the user clicks outside of it
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
 
 </body>
 
