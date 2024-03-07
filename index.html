@@ -26,6 +26,19 @@
 
     <div class="site-main-wrapper">
 
+<!-- ------------------------------------------------------------------ -->
+        <div class="hamburger-dropdown">
+            <button onclick="myHBFunc()" class="HMdrpbtn">
+                <img src="static/images/hamberger.png" alt="" class="none">
+            </button>
+            <div id="myDrpdn" class="drpdn-cont">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">ContactUs</a>
+            </div>
+        </div>
+<!-- ------------------------------------------------------------------ -->
+
         <div class="cont-1  sec-bg  parallax1">
             <!-- <hr> -->
 
@@ -495,6 +508,25 @@
         }
 
         // ------------------------------------------------------------------------
+
+        function myHBFunc() {
+            document.getElementById("myDrpdn").classList.toggle("show1");
+        }
+
+        // Close the dropdown menu if the user clicks outside of it
+        window.onclick = function (event) {
+            if (!event.target.matches('.HMdrpbtn')) {
+                var dropdowns = document.getElementsByClassName("drpdn-cont");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show1')) {
+                        openDropdown.classList.remove('show1');
+                    }
+                }
+            }
+        }
+
 
     </script>
 

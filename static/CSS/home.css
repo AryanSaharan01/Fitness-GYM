@@ -54,13 +54,6 @@ body {
 }
 
 
-.nav-sliding img{
-  height: 50px;
-  float: right;
-  margin-right: 5vw;
-
-  display: none;
-}
 
 /* ------------------------------------------------------------- */
 
@@ -629,10 +622,12 @@ nav {
 
 .price-box:hover {
   border-radius: 25px;
-  border-top: 3px solid var(--TH5-main-3);
+  box-shadow: 0px 0px 20px 5px #fff;
+
+  /* border-top: 3px solid var(--TH5-main-3);
   border-bottom: 3px solid var(--TH5-main-4);
   border-left: 3px solid var(--TH5-main-3);
-  border-right: 3px solid var(--TH5-main-4);
+  border-right: 3px solid var(--TH5-main-4); */
 }
 
 .price-box h2 {
@@ -700,11 +695,13 @@ nav {
 }
 
 .blog:hover {
+  box-shadow: 0px 0px 20px 5px #fff;
+
   border-radius: 10px;
-  border-top: 3px solid var(--TH5-main-3);
+  /* border-top: 3px solid var(--TH5-main-3);
   border-bottom: 3px solid var(--TH5-main-4);
   border-left: 3px solid var(--TH5-main-3);
-  border-right: 3px solid var(--TH5-main-4);
+  border-right: 3px solid var(--TH5-main-4); */
 }
 
 .blog-img {
