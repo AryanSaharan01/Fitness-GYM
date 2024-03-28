@@ -269,7 +269,7 @@ nav {
   filter: brightness(50%);
 }
 
-.overlay {
+.overlay1 {
   position: absolute;
   top: 0;
   left: 0;
@@ -284,12 +284,12 @@ nav {
   transition: opacity 0.4s ease;
 }
 
-.trainers:hover .overlay {
+.trainers:hover .overlay1 {
   border-radius: 15px;
   opacity: 1; /* Show the overlay on hover */
 }
 
-.overlay h1 {
+.overlay1 h1 {
   font-size: 45px;
   text-shadow: var(--text-shadow-multi);
   /* color: #eee; */
