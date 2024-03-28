@@ -1,3 +1,12 @@
+@media screen and (max-width: 1200px){
+  .trainer-flex {
+    display: grid;
+    justify-content: center;
+    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media screen and (max-width: 960px) {
   .nav-item ul {
     display: none;
@@ -137,13 +146,6 @@
   }
 }
 
-@media screen and (max-width: 1200px){
-  .trainer-flex {
-    display: grid;
-    justify-content: center;
-    gap: 20px;
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
+
 
 
