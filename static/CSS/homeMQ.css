@@ -9,23 +9,15 @@
   font-family: "Protest Revolution", sans-serif;
 }
 
+.overlay, .hamburger{
+  display: none;
+}
+
 @media screen and (max-width: 960px) {
-  #main-nav {
+
+  .nav-item ul {
     display: none;
   }
-
-  .none{
-    display: block;
-  }
-
-  .hamburger-dropdown{
-    position: absolute;
-    top: 5vh;
-    right: 5vw;
-    /* display: flex;
-    flex-direction: column; */
-    transition: 1s ease-in-out;
-      }
 }
 
 @media screen and (max-width: 995px) {
@@ -43,7 +35,7 @@
     letter-spacing: 2px;
   }
 
-  .more-btn{
+  .more-btn {
     padding: 1.2vh 1.2vw;
   }
 
@@ -97,31 +89,31 @@
     padding: 9vh 2vw;
   }
 
-  .cmn-box{
+  .cmn-box {
     margin-bottom: 5vh;
   }
 
-  .cont-5-flex{
+  .cont-5-flex {
     width: 50%;
   }
 
-  .cont-5-cmn p{
+  .cont-5-cmn p {
     font-size: 61px;
   }
 
-  .prev, .next{
+  .prev,
+  .next {
     font-size: 30px;
   }
 
-  .cont-6 h1{
+  .cont-6 h1 {
     margin-bottom: 4vh;
   }
 
-  .price-box p{
+  .price-box p {
     padding: 1vh 0;
   }
 }
-
 
 /* -----------------  MQ  960  ----------------------------------- */
 
@@ -157,7 +149,6 @@
 /* -----------------  MQ  800  ------------------------------- */
 
 @media screen and (max-width: 800px) {
-
   .cont-1 {
     max-height: 100vh;
     min-height: 55vh;
@@ -208,15 +199,13 @@
     padding: 9vh 2vw;
   }
 
-  
   .girl-cmn h1,
-  .boy-cmn h1{
+  .boy-cmn h1 {
     font-size: 38px;
   }
 
-  
   .girl-cmn p,
-  .boy-cmn p{
+  .boy-cmn p {
     font-size: 16px;
   }
 
@@ -311,8 +300,85 @@
   }
 }
 
+/* --------------------------------------------------------- */
+@media only screen and (max-width: 768px) {
+
+  .nav-item,.nav-padding{
+    display: none;
+  }
+ 
+  body {
+    font-family: 'Lato', sans-serif;
+  }
+  
+  .overlay {
+    display: block;
+
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    overflow-y: hidden;
+    transition: 0.5s;
+  }
+  
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  .hamburger{
+    display: block;
+    margin-left: 7vw;
+  }
+  
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+  
+}
+
+
 /* -----------------  MQ  450  ------------------------------- */
 @media screen and (max-width: 450px) {
+  .overlay {
+    display: block;
+    overflow-y: auto;
+  }
+  .overlay a {
+    font-size: 20px;
+  }
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+  .nav-item .overlay {
+    display: none;
+  }
+  /* ------------- */
+
   .logo img {
     height: 31px;
     width: 129px;
@@ -448,7 +514,7 @@
     display: none;
   }
 
-  .ftr-flex{
+  .ftr-flex {
     width: 100%;
   }
 
@@ -471,13 +537,69 @@
 }
 /* -----------------  MQ  400  ------------------------------- */
 @media screen and (max-width: 400px) {
-  .cont-1{
+  .cont-1 {
     height: 50vh;
   }
 
-  .cont-2, .cont-3{
+  .cont-2,
+  .cont-3 {
     height: 52vh;
   }
-  
 }
 /* -----------------  MQ  660  ------------------------------- */
+@media only screen and (max-width: 768px) {
+  .nav-item,
+  .nav-padding {
+    display: none;
+  }
+
+  body {
+    font-family: "Lato", sans-serif;
+  }
+
+  .overlay {
+    display: block;
+
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    overflow-y: hidden;
+    transition: 0.5s;
+  }
+
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  .hamburger {
+    margin-left: 7vw;
+  }
+
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+
+  .overlay a:hover,
+  .overlay a:focus {
+    color: #f1f1f1;
+  }
+
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+}
